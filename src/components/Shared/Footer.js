@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="flex flex-col items-center justify-center py-4 bg-pureBlackColor text-whiteHigh">
       <Link to="https://artsky.io/">
-        <img className="w-32 h-32 rounded-full bordered border-2 border-white" src={logo} alt="" />
+        <img className="w-32 h-32 rounded-full bordered border-2 border-mainColor" src={logo} alt="" />
       </Link>
       <span>Copyright © 2023</span>
       <span className="text-amber-900 font-black">ARTSKY LLC</span>

@@ -5,7 +5,7 @@ import Footer from "../components/Shared/Footer";
 
 const Main = () => {
   return (
-    <div className="flex flex-col gap-16 bg-blackLow">
+    <div className="flex flex-col gap-12 bg-whiteMid">
       <Menu></Menu>
       <Outlet></Outlet>
       <Footer></Footer>

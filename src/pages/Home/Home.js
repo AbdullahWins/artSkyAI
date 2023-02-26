@@ -22,7 +22,7 @@ const Home = () => {
   const moduleList = [
     {
       moduleName: "Blog Writting Tool",
-      moduleDescription: "Write SEO friendly blogs that people actually reads!",
+      moduleDescription: "Write SEO friendly blogs that people actually reads.",
       moduleRoute: "/blog",
       img: blog,
       resetOutput: resetOutput,
@@ -30,7 +30,7 @@ const Home = () => {
     {
       moduleName: "Product Description Tool",
       moduleDescription:
-        "Generate unique product descriptions to catch attention!",
+        "Generate unique product descriptions to catch attention.",
       moduleRoute: "/product",
       img: productDescription,
       resetOutput: resetOutput,
@@ -38,28 +38,28 @@ const Home = () => {
     {
       moduleName: "Cold Email Generator",
       moduleDescription:
-        "Generate cold rmail templates instantly without any hussle!",
+        "Generate cold email templates instantly without any hussle.",
       moduleRoute: "/cold",
       img: coldEmail,
       resetOutput: resetOutput,
     },
     {
       moduleName: "Job Description Helper",
-      moduleDescription: "Generate job descriptions using AI assistant!",
+      moduleDescription: "Generate job descriptions using AI assistant.",
       moduleRoute: "/job",
       img: jobDescription,
       resetOutput: resetOutput,
     },
     {
       moduleName: "Social Media Adverts",
-      moduleDescription: "Write engaging social media adverts to boost sales!",
+      moduleDescription: "Write engaging social media adverts to boost sales.",
       moduleRoute: "/social",
       img: social,
       resetOutput: resetOutput,
     },
     {
       moduleName: "Unique Value Propositions",
-      moduleDescription: "Know the selling points of your product/service!",
+      moduleDescription: "Know the selling points of your product/service.",
       moduleRoute: "/unique",
       img: uniqueValue,
       resetOutput: resetOutput,
@@ -67,14 +67,14 @@ const Home = () => {
     {
       moduleName: "Headlines and Descriptions",
       moduleDescription:
-        "Can't think of a good headline and description? AI got you covered!",
+        "Can't think of a good headline and description? AI got you covered.",
       moduleRoute: "/headlines",
       img: headline,
       resetOutput: resetOutput,
     },
     {
       moduleName: "AIDA Framework Generator",
-      moduleDescription: "The best AI powered AIDA Framework on the internet!",
+      moduleDescription: "The best AI powered AIDA Framework on the internet.",
       moduleRoute: "/aida",
       img: aida,
       resetOutput: resetOutput,
@@ -82,7 +82,7 @@ const Home = () => {
     {
       moduleName: "IT Support Provider",
       moduleDescription:
-        "Do you have an technical issue with your computer or any other device, software or hardware? Consult the in-house IT Expert.",
+        "Consult the IT expert AI for any IT related assistance.",
       moduleRoute: "/itsupport",
       img: itSupport,
       resetOutput: resetOutput,
@@ -90,7 +90,7 @@ const Home = () => {
     {
       moduleName: "Career Counselor AI",
       moduleDescription:
-        "Need some help deciding on the next step to take in your professional life? Talk to our on-hand career counselor.",
+        "Talk to our on-hand career counselor for the best consultancy.",
       moduleRoute: "/career",
       img: career,
       resetOutput: resetOutput,
@@ -98,13 +98,21 @@ const Home = () => {
   ];
 
   return (
-    <section>
+    <section className="max-w-11/12 mx-auto my-0 p-4">
       {/* cards */}
-      <div className="md:w-2/3 mx-auto my-0 p-12 bg-whiteLow rounded-xl">
-        <p className="text-center text-whiteHigh font-black text-3xl py-4 mb-12  bg-mainColor">
-          ALL MODULES
+      <div className="rounded-xl">
+        <div className="text-center py-4 mb-8">
+          <p className="text-4xl font-black">
+            &#128075; Hey, what are we creating today?
+          </p>
+          <p className="opacity-70 pt-3">
+            Get started by selecting the content type from the options below
+          </p>
+        </div>
+        <p className="font-black text-center lg:text-left opacity-70 py-2">
+          Most Popular
         </p>
-        <section className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4 p-2">
+        <section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-between gap-4">
           {moduleList?.map((module, i) => {
             return <Card key={i} module={module}></Card>;
           })}
