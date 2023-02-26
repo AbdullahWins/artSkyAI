@@ -13,31 +13,24 @@ const ColdEmail = () => {
   };
 
   return (
-    <div className="h-screen max-w-3xl mx-auto flex flex-col justify-between gap-4 bg-gray-300">
-      <section className="flex flex-col gap-4 p-4">
-        <h1 className="text-xl font-bold text-center text-white bg-red-500 p-4">
-          <span>
-            <i className="fa-solid fa-square-rss"></i>
-          </span>
-          --Cold Email--
-          <span>
-            <i className="fa-solid fa-square-rss"></i>
-          </span>
+    <div className="mx-12 flex flex-col justify-between bg-whiteLow rounded-xl">
+      <section className="flex flex-col gap-4 p-4 bg-mainColor rounded-xl">
+        <h1 className="text-xl font-bold text-center text-blackHigh bg-whiteHigh p-4">
+          Cold E-mail
         </h1>
-        <hr />
         <div className="flex gap-2">
           <input
-            className={`p-3 w-full rounded-sm border-solid border-2 border-red-200 ${
+            className={`p-3 w-full rounded-sm border-solid border-2 border-mainColor ${
               isLoading ? "hidden" : "flex"
             }`}
-            placeholder="Briefly describe the email topic"
+            placeholder="Briefly describe what this Email is about"
             name="blog-input"
             id="input"
           ></input>
           <button
             disabled={isLoading}
-            className={`btn hover:bg-red-300 rounded-sm px-4 ${
-              isLoading ? "bg-red-700 w-full" : "bg-red-400"
+            className={`btn text-blackHigh hover:bg-whiteMid rounded-sm px-4 ${
+              isLoading ? "bg-mainColor w-full" : "bg-whiteLow"
             }`}
             onClick={handleClick}
           >
@@ -74,7 +67,7 @@ const ColdEmail = () => {
           </p>
         </div>
         <textarea
-          className="p-2 rounded-md border-solid border-2 border-red-200"
+          className="p-2 rounded-md border-solid border-2 border-mainColor"
           placeholder=""
           defaultValue={output}
           cols="10"

@@ -7,37 +7,31 @@ const Career = () => {
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "I want you to act as a career counselor. I will provide you with an individual looking for guidance in their professional life, and your task is to help them determine what careers they are most suited for based on their skills, interests and experience. You should also conduct research into the various options available, explain the job market trends in different industries and advice on which qualifications would be beneficial for pursuing particular fields. My first request is: ";
+    const prompt =
+      "I want you to act as a career counselor. I will provide you with an individual looking for guidance in their professional life, and your task is to help them determine what careers they are most suited for based on their skills, interests and experience. You should also conduct research into the various options available, explain the job market trends in different industries and advice on which qualifications would be beneficial for pursuing particular fields. My first request is: ";
     setIsLoading(true);
     processRequest(prompt, input);
   };
 
   return (
-    <div className="h-screen max-w-3xl mx-auto flex flex-col justify-between gap-4 bg-gray-300">
-      <section className="flex flex-col gap-4 p-4">
-        <h1 className="text-xl font-bold text-center text-white bg-red-500 p-4">
-          <span>
-            <i className="fa-solid fa-square-rss"></i>
-          </span>
-          --Career Counselor--
-          <span>
-            <i className="fa-solid fa-square-rss"></i>
-          </span>
+    <div className="mx-12 flex flex-col justify-between bg-whiteLow rounded-xl">
+      <section className="flex flex-col gap-4 p-4 bg-mainColor rounded-xl">
+        <h1 className="text-xl font-bold text-center text-blackHigh bg-whiteHigh p-4">
+          Career Consultant
         </h1>
-        <hr />
         <div className="flex gap-2">
           <input
-            className={`p-3 w-full rounded-sm border-solid border-2 border-red-200 ${
+            className={`p-3 w-full rounded-sm border-solid border-2 border-mainColor ${
               isLoading ? "hidden" : "flex"
             }`}
-            placeholder="Describe your career goals"
+            placeholder="Briefly describe desired career path"
             name="blog-input"
             id="input"
           ></input>
           <button
             disabled={isLoading}
-            className={`btn hover:bg-red-300 rounded-sm px-4 ${
-              isLoading ? "bg-red-700 w-full" : "bg-red-400"
+            className={`btn text-blackHigh hover:bg-whiteMid rounded-sm px-4 ${
+              isLoading ? "bg-mainColor w-full" : "bg-whiteLow"
             }`}
             onClick={handleClick}
           >
@@ -46,7 +40,7 @@ const Career = () => {
                 <span>
                   <i className="fa-solid fa-gear fa-spin"></i>
                 </span>
-                <span> Pondering your deep thoughts..</span>
+                <span> Generating Career Consultancy </span>
                 <span>
                   <i className="fa-solid fa-gear fa-spin"></i>
                 </span>
@@ -74,7 +68,7 @@ const Career = () => {
           </p>
         </div>
         <textarea
-          className="p-2 rounded-md border-solid border-2 border-red-200"
+          className="p-2 rounded-md border-solid border-2 border-mainColor"
           placeholder=""
           defaultValue={output}
           cols="10"

@@ -1,25 +1,25 @@
 import React, { useContext } from "react";
 import { AiContext } from "../../contexts/AiContext";
 
-const Dreamer = () => {
+const AiModule = () => {
   const { output, processRequest, isLoading, setIsLoading } =
     useContext(AiContext);
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "I want you to act as a dream interpreter. I will give you descriptions of my dreams, and you will provide interpretations based on the symbols and themes present in the dream. Do not provide personal opinions or assumptions about the dreamer. Provide only factual interpretations based on the information given. My first dream is: ";
+    const prompt = "Write unique value proposition (UAV) for:";
     setIsLoading(true);
     processRequest(prompt, input);
   };
 
   return (
-    <div className="h-screen max-w-3xl mx-auto flex flex-col justify-between gap-4 bg-gray-300">
+    <div className="max-w-3xl mx-auto flex flex-col justify-between gap-4 bg-gray-300">
       <section className="flex flex-col gap-4 p-4">
         <h1 className="text-xl font-bold text-center text-white bg-red-500 p-4">
           <span>
             <i className="fa-solid fa-square-rss"></i>
           </span>
-          --Dream Interpreter--
+          --Unique Value Proposition--
           <span>
             <i className="fa-solid fa-square-rss"></i>
           </span>
@@ -30,7 +30,7 @@ const Dreamer = () => {
             className={`p-3 w-full rounded-sm border-solid border-2 border-red-200 ${
               isLoading ? "hidden" : "flex"
             }`}
-            placeholder="Briefly describe your recent dream"
+            placeholder="Briefly describe what this product is"
             name="blog-input"
             id="input"
           ></input>
@@ -46,7 +46,7 @@ const Dreamer = () => {
                 <span>
                   <i className="fa-solid fa-gear fa-spin"></i>
                 </span>
-                <span> Making sense of your dreams..</span>
+                <span> Generating Product Description </span>
                 <span>
                   <i className="fa-solid fa-gear fa-spin"></i>
                 </span>
@@ -85,4 +85,4 @@ const Dreamer = () => {
   );
 };
 
-export default Dreamer;
+export default AiModule;
