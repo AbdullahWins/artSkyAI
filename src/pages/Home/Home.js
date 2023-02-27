@@ -8,8 +8,15 @@ import social from "../../assets/cover/social.png";
 import uniqueValue from "../../assets/cover/uniqueValue.png";
 import headline from "../../assets/cover/headline.png";
 import aida from "../../assets/cover/aida.png";
-import itSupport from "../../assets/cover/itSupport.png";
 import career from "../../assets/cover/career.png";
+import itSupport from "../../assets/cover/itSupport.png";
+import doctor from "../../assets/cover/doctor.png";
+import lawyer from "../../assets/cover/lawyer.png";
+import chef from "../../assets/cover/chef.png";
+import dreamer from "../../assets/cover/dreamer.png";
+import pas from "../../assets/cover/pas.png";
+import psychologist from "../../assets/cover/psychologist.png";
+import assistant from "../../assets/cover/assistant.png";
 import { AiContext } from "../../contexts/AiContext";
 
 const Home = () => {
@@ -21,30 +28,28 @@ const Home = () => {
 
   const moduleList = [
     {
-      moduleName: "Blog Writting Tool",
+      moduleName: "Blog Writting",
       moduleDescription: "Write SEO friendly blogs that people actually reads.",
       moduleRoute: "/blog",
       img: blog,
       resetOutput: resetOutput,
     },
     {
-      moduleName: "Product Description Tool",
-      moduleDescription:
-        "Generate unique product descriptions to catch attention.",
+      moduleName: "Product Description",
+      moduleDescription: "Generate unique product descriptions.",
       moduleRoute: "/product",
       img: productDescription,
       resetOutput: resetOutput,
     },
     {
-      moduleName: "Cold Email Generator",
-      moduleDescription:
-        "Generate cold email templates instantly without any hussle.",
+      moduleName: "Cold Email",
+      moduleDescription: "Generate cold email templates instantly.",
       moduleRoute: "/cold",
       img: coldEmail,
       resetOutput: resetOutput,
     },
     {
-      moduleName: "Job Description Helper",
+      moduleName: "Job Description",
       moduleDescription: "Generate job descriptions using AI assistant.",
       moduleRoute: "/job",
       img: jobDescription,
@@ -58,41 +63,96 @@ const Home = () => {
       resetOutput: resetOutput,
     },
     {
-      moduleName: "Unique Value Propositions",
+      moduleName: "UVP",
       moduleDescription: "Know the selling points of your product/service.",
       moduleRoute: "/unique",
       img: uniqueValue,
       resetOutput: resetOutput,
     },
     {
-      moduleName: "Headlines and Descriptions",
-      moduleDescription:
-        "Can't think of a good headline and description? AI got you covered.",
+      moduleName: "Headline & Description",
+      moduleDescription: "Create engaging headline & description",
       moduleRoute: "/headlines",
       img: headline,
       resetOutput: resetOutput,
     },
     {
-      moduleName: "AIDA Framework Generator",
-      moduleDescription: "The best AI powered AIDA Framework on the internet.",
+      moduleName: "AIDA Framework",
+      moduleDescription: "The best AI powered AIDA Framework.",
       moduleRoute: "/aida",
       img: aida,
       resetOutput: resetOutput,
     },
     {
-      moduleName: "IT Support Provider",
-      moduleDescription:
-        "Consult the IT expert AI for any IT related assistance.",
+      moduleName: "IT Support",
+      moduleDescription: "Your IT expert AI for any IT assistance.",
       moduleRoute: "/itsupport",
       img: itSupport,
       resetOutput: resetOutput,
     },
     {
-      moduleName: "Career Counselor AI",
-      moduleDescription:
-        "Talk to our on-hand career counselor for the best consultancy.",
+      moduleName: "Career Counselor",
+      moduleDescription: "Your on-hand career counselor.",
       moduleRoute: "/career",
       img: career,
+      resetOutput: resetOutput,
+    },
+    {
+      moduleName: "Ai Doctor",
+      moduleDescription:
+        "Consult medical issues with the Ai Doctor.",
+      moduleRoute: "/doctor",
+      img: doctor,
+      resetOutput: resetOutput,
+    },
+    {
+      moduleName: "Ai Lawyer",
+      moduleDescription:
+        "Your own AI powered lawyer at your service.",
+      moduleRoute: "/lawyer",
+      img: lawyer,
+      resetOutput: resetOutput,
+    },
+
+    {
+      moduleName: "Chef",
+      moduleDescription:
+        "Make something new with AI chef.",
+      moduleRoute: "/chef",
+      img: chef,
+      resetOutput: resetOutput,
+    },
+
+    {
+      moduleName: "Problem-Agitate-Solution",
+      moduleDescription:
+        "Get quick but in-depth Problem-Agitate-Solutions.",
+      moduleRoute: "/pas",
+      img: pas,
+      resetOutput: resetOutput,
+    },
+    {
+      moduleName: "Psychologist",
+      moduleDescription:
+        "Get some peace of mind here with the expert.",
+      moduleRoute: "/psychologist",
+      img: psychologist,
+      resetOutput: resetOutput,
+    },
+    {
+      moduleName: "Dream Interpreter",
+      moduleDescription:
+        "Come find out what your dreams actually mean.",
+      moduleRoute: "/dreamer",
+      img: dreamer,
+      resetOutput: resetOutput,
+    },
+    {
+      moduleName: "Personal Assistant",
+      moduleDescription:
+        "Your very own personal assistant at your service.",
+      moduleRoute: "/assistant",
+      img: assistant,
       resetOutput: resetOutput,
     },
   ];
@@ -110,9 +170,9 @@ const Home = () => {
           </p>
         </div>
         <p className="font-black text-center lg:text-left opacity-70 py-2">
-          Most Popular
+          All Modules
         </p>
-        <section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-between gap-4">
+        <section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-between gap-5">
           {moduleList?.map((module, i) => {
             return <Card key={i} module={module}></Card>;
           })}
