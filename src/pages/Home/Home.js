@@ -36,24 +36,24 @@ const Home = () => {
       resetOutput: resetOutput,
     },
     {
-      moduleName: "AI Financial",
+      moduleName: "Cold Email",
+      moduleDescription: "Generate cold email templates instantly.",
+      moduleRoute: "/cold",
+      img: coldEmail,
+      resetOutput: resetOutput,
+    },
+    {
+      moduleName: "Ai Financial",
       moduleDescription: "Your very own personal assistant at your service.",
       moduleRoute: "/financial",
       img: financial,
       resetOutput: resetOutput,
     },
     {
-      moduleName: "Product Description",
-      moduleDescription: "Generate unique product descriptions.",
-      moduleRoute: "/product",
-      img: productDescription,
-      resetOutput: resetOutput,
-    },
-    {
-      moduleName: "Cold Email",
-      moduleDescription: "Generate cold email templates instantly.",
-      moduleRoute: "/cold",
-      img: coldEmail,
+      moduleName: "Blog Writting",
+      moduleDescription: "Write SEO friendly blogs that people actually reads.",
+      moduleRoute: "/blog",
+      img: blog,
       resetOutput: resetOutput,
     },
     {
@@ -71,7 +71,7 @@ const Home = () => {
       resetOutput: resetOutput,
     },
     {
-      moduleName: "UVP",
+      moduleName: "UVP Framework",
       moduleDescription: "Know the selling points of your product/service.",
       moduleRoute: "/unique",
       img: uniqueValue,
@@ -85,13 +85,6 @@ const Home = () => {
       resetOutput: resetOutput,
     },
     {
-      moduleName: "Blog Writting",
-      moduleDescription: "Write SEO friendly blogs that people actually reads.",
-      moduleRoute: "/blog",
-      img: blog,
-      resetOutput: resetOutput,
-    },
-    {
       moduleName: "AIDA Framework",
       moduleDescription: "The best AI powered AIDA Framework.",
       moduleRoute: "/aida",
@@ -99,10 +92,24 @@ const Home = () => {
       resetOutput: resetOutput,
     },
     {
+      moduleName: "Product Description",
+      moduleDescription: "Generate unique product descriptions.",
+      moduleRoute: "/product",
+      img: productDescription,
+      resetOutput: resetOutput,
+    },
+    {
       moduleName: "IT Support",
       moduleDescription: "Your IT expert AI for any IT assistance.",
       moduleRoute: "/itsupport",
       img: itSupport,
+      resetOutput: resetOutput,
+    },
+    {
+      moduleName: "Ai Lawyer",
+      moduleDescription: "Your own AI powered lawyer at your service.",
+      moduleRoute: "/lawyer",
+      img: lawyer,
       resetOutput: resetOutput,
     },
     {
@@ -119,21 +126,6 @@ const Home = () => {
       img: doctor,
       resetOutput: resetOutput,
     },
-    {
-      moduleName: "Ai Lawyer",
-      moduleDescription: "Your own AI powered lawyer at your service.",
-      moduleRoute: "/lawyer",
-      img: lawyer,
-      resetOutput: resetOutput,
-    },
-
-    {
-      moduleName: "Chef",
-      moduleDescription: "Make something new with AI chef.",
-      moduleRoute: "/chef",
-      img: chef,
-      resetOutput: resetOutput,
-    },
 
     {
       moduleName: "Problem-Agitate-Solution",
@@ -142,11 +134,12 @@ const Home = () => {
       img: pas,
       resetOutput: resetOutput,
     },
+
     {
-      moduleName: "Psychologist",
-      moduleDescription: "Get some peace of mind here with the expert.",
-      moduleRoute: "/psychologist",
-      img: psychologist,
+      moduleName: "Personal Chef",
+      moduleDescription: "Make something new with AI chef.",
+      moduleRoute: "/chef",
+      img: chef,
       resetOutput: resetOutput,
     },
     {
@@ -154,6 +147,13 @@ const Home = () => {
       moduleDescription: "Come find out what your dreams actually mean.",
       moduleRoute: "/dreamer",
       img: dreamer,
+      resetOutput: resetOutput,
+    },
+    {
+      moduleName: "Personal Psychologist",
+      moduleDescription: "Get some peace of mind here with the expert.",
+      moduleRoute: "/psychologist",
+      img: psychologist,
       resetOutput: resetOutput,
     },
   ];
