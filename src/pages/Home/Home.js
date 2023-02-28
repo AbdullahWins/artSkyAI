@@ -17,6 +17,7 @@ import dreamer from "../../assets/cover/dreamer.png";
 import pas from "../../assets/cover/pas.png";
 import psychologist from "../../assets/cover/psychologist.png";
 import assistant from "../../assets/cover/assistant.png";
+import financial from "../../assets/cover/financial.png";
 import { AiContext } from "../../contexts/AiContext";
 
 const Home = () => {
@@ -28,10 +29,17 @@ const Home = () => {
 
   const moduleList = [
     {
-      moduleName: "Blog Writting",
-      moduleDescription: "Write SEO friendly blogs that people actually reads.",
-      moduleRoute: "/blog",
-      img: blog,
+      moduleName: "Personal Assistant",
+      moduleDescription: "Your very own personal assistant at your service.",
+      moduleRoute: "/assistant",
+      img: assistant,
+      resetOutput: resetOutput,
+    },
+    {
+      moduleName: "AI Financial",
+      moduleDescription: "Your very own personal assistant at your service.",
+      moduleRoute: "/financial",
+      img: financial,
       resetOutput: resetOutput,
     },
     {
@@ -77,6 +85,13 @@ const Home = () => {
       resetOutput: resetOutput,
     },
     {
+      moduleName: "Blog Writting",
+      moduleDescription: "Write SEO friendly blogs that people actually reads.",
+      moduleRoute: "/blog",
+      img: blog,
+      resetOutput: resetOutput,
+    },
+    {
       moduleName: "AIDA Framework",
       moduleDescription: "The best AI powered AIDA Framework.",
       moduleRoute: "/aida",
@@ -99,16 +114,14 @@ const Home = () => {
     },
     {
       moduleName: "Ai Doctor",
-      moduleDescription:
-        "Consult medical issues with the Ai Doctor.",
+      moduleDescription: "Consult medical issues with the Ai Doctor.",
       moduleRoute: "/doctor",
       img: doctor,
       resetOutput: resetOutput,
     },
     {
       moduleName: "Ai Lawyer",
-      moduleDescription:
-        "Your own AI powered lawyer at your service.",
+      moduleDescription: "Your own AI powered lawyer at your service.",
       moduleRoute: "/lawyer",
       img: lawyer,
       resetOutput: resetOutput,
@@ -116,8 +129,7 @@ const Home = () => {
 
     {
       moduleName: "Chef",
-      moduleDescription:
-        "Make something new with AI chef.",
+      moduleDescription: "Make something new with AI chef.",
       moduleRoute: "/chef",
       img: chef,
       resetOutput: resetOutput,
@@ -125,34 +137,23 @@ const Home = () => {
 
     {
       moduleName: "Problem-Agitate-Solution",
-      moduleDescription:
-        "Get quick but in-depth Problem-Agitate-Solutions.",
+      moduleDescription: "Get quick but in-depth Problem-Agitate-Solutions.",
       moduleRoute: "/pas",
       img: pas,
       resetOutput: resetOutput,
     },
     {
       moduleName: "Psychologist",
-      moduleDescription:
-        "Get some peace of mind here with the expert.",
+      moduleDescription: "Get some peace of mind here with the expert.",
       moduleRoute: "/psychologist",
       img: psychologist,
       resetOutput: resetOutput,
     },
     {
       moduleName: "Dream Interpreter",
-      moduleDescription:
-        "Come find out what your dreams actually mean.",
+      moduleDescription: "Come find out what your dreams actually mean.",
       moduleRoute: "/dreamer",
       img: dreamer,
-      resetOutput: resetOutput,
-    },
-    {
-      moduleName: "Personal Assistant",
-      moduleDescription:
-        "Your very own personal assistant at your service.",
-      moduleRoute: "/assistant",
-      img: assistant,
       resetOutput: resetOutput,
     },
   ];
@@ -172,7 +173,7 @@ const Home = () => {
         <p className="font-black text-center lg:text-left opacity-70 py-2">
           All Modules
         </p>
-        <section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-between gap-5">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-between gap-5">
           {moduleList?.map((module, i) => {
             return <Card key={i} module={module}></Card>;
           })}

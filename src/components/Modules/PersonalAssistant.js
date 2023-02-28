@@ -37,7 +37,7 @@ const PersonalAssistant = () => {
               {isLoading ? (
                 <p>
                   <span>
-                    <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+                    <i className="fa-solid fa-spinner fa-spin-pulse"></i>
                   </span>
                   <span> Generating... </span>
                 </p>
@@ -62,7 +62,13 @@ const PersonalAssistant = () => {
             </p>
           </div>
           <div className="p-4">
-            <p>{output}</p>
+            <textarea
+              className={`p-3 w-full rounded-sm border-solid border-2 border-whiteLow`}
+              placeholder=""
+              defaultValue={output}
+              cols="10"
+              rows="10"
+            ></textarea>
           </div>
         </section>
       </div>

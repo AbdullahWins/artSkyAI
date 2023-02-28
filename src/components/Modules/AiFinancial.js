@@ -1,23 +1,23 @@
 import React, { useContext } from "react";
 import { AiContext } from "../../contexts/AiContext";
 
-const UniqueValueProposition = () => {
+const AiFinancial = () => {
   const { output, processRequest, isLoading, setIsLoading } =
     useContext(AiContext);
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "Write unique value proposition (UAV) for:";
+    const prompt =
+      "Act like a financial expert, provide structured assistance for";
     setIsLoading(true);
     processRequest(prompt, input);
   };
-
   return (
     <section className="bg-whiteMid">
       <div className="lg:w-1/2 mx-auto my-0 bg-whiteHigh rounded-lg">
         <section className="flex flex-col">
           <h1 className="text-3xl font-bold text-blackHigh p-2">
-            UVP Framework
+            AI Financial
           </h1>
           <div className="flex flex-col gap-2 p-2">
             <textarea
@@ -76,4 +76,4 @@ const UniqueValueProposition = () => {
   );
 };
 
-export default UniqueValueProposition;
+export default AiFinancial;

@@ -18,6 +18,7 @@ import Dreamer from "../components/Modules/Dreamer";
 import PAS from "../components/Modules/PAS";
 import Psychologist from "../components/Modules/Psychologist";
 import PersonalAssistant from "../components/Modules/PersonalAssistant";
+import AiFinancial from "../components/Modules/AiFinancial";
 
 export const routes = createBrowserRouter([
   {
@@ -95,6 +96,10 @@ export const routes = createBrowserRouter([
       {
         path: "/assistant",
         element: <PersonalAssistant></PersonalAssistant>,
+      },
+      {
+        path: "/financial",
+        element: <AiFinancial></AiFinancial>,
       },
     ],
   },
