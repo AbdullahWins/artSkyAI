@@ -14,7 +14,7 @@ const JobDescription = () => {
 
   return (
     <section className="bg-whiteMid">
-    <div className="lg:w-1/2 mx-auto my-0 bg-whiteHigh rounded-lg">
+    <div className="w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto my-0 bg-whiteHigh rounded-lg">
       <section className="flex flex-col">
         <h1 className="text-3xl font-bold text-blackHigh p-2">
           Job Description
@@ -29,22 +29,23 @@ const JobDescription = () => {
             rows="5"
           ></textarea>
           <button
-            className={`btn text-whiteHigh bg-infoColor border-none btn-md rounded-md px-4 ${
-              isLoading ? "bg-mainColor w-44" : "bg-whiteLow w-36"
-            }`}
-            onClick={handleClick}
-          >
-            {isLoading ? (
-              <p>
-                <span>
-                  <i className="fa-solid fa-spinner fa-spin-pulse"></i>
-                </span>
-                <span> Generating... </span>
-              </p>
-            ) : (
-              <p>Create&nbsp;Content</p>
-            )}
-          </button>
+              disabled={isLoading}
+              className={`btn text-whiteHigh bg-infoColor border-none btn-md rounded-md px-4 ${
+                isLoading ? "bg-mainColor w-44" : "text-whiteLow w-36"
+              }`}
+              onClick={handleClick}
+            >
+              {isLoading ? (
+                <p>
+                  <span>
+                    <i className="fa-solid fa-spinner fa-spin-pulse"></i>
+                  </span>
+                  <span> Generating... </span>
+                </p>
+              ) : (
+                <p>Enter</p>
+              )}
+            </button>
         </div>
         <div>
           <p className="font-bold text-xl text-center py-2">
