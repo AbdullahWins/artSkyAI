@@ -7,7 +7,7 @@ const Menu = () => {
     <div className="flex items-center justify-between p-4 text-xl font-bold text-center text-whiteMid bg-pureBlackColor">
       <p>Assist</p>
       <Link to="https://artsky.io/">
-        <img className="w-12 h-8" src={logo} alt="" />
+        <img className="h-6" src={logo} alt="" />
       </Link>
     </div>
   );
