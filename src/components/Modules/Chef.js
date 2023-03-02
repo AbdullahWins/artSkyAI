@@ -17,7 +17,7 @@ const Chef = () => {
       <div className="w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto my-0 bg-whiteHigh rounded-lg">
         <section className="flex flex-col">
           <h1 className="text-3xl font-bold text-blackHigh p-2">
-            Personal Shef
+            Personal Chef
           </h1>
           <div className="flex flex-col gap-2 p-2">
             <textarea
