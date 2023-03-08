@@ -19,6 +19,8 @@ import PAS from "../components/Modules/PAS";
 import Psychologist from "../components/Modules/Psychologist";
 import PersonalAssistant from "../components/Modules/PersonalAssistant";
 import AiFinancial from "../components/Modules/AiFinancial";
+import PrivateRoute from "./PrivateRouter";
+import Login from "../pages/Home/Authentications/Login";
 
 export const routes = createBrowserRouter([
   {
@@ -27,7 +29,15 @@ export const routes = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>,
+        element: (
+          <PrivateRoute>
+            <Home></Home>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
       },
       {
         path: "/blog",
