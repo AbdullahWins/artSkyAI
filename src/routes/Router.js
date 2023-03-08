@@ -36,10 +36,6 @@ export const routes = createBrowserRouter([
         ),
       },
       {
-        path: "/login",
-        element: <Login></Login>,
-      },
-      {
         path: "/blog",
         element: <BlogPost></BlogPost>,
       },
@@ -113,7 +109,10 @@ export const routes = createBrowserRouter([
       },
     ],
   },
-
+  {
+    path: "/login",
+    element: <Login></Login>,
+  },
   {
     path: "*",
     element: (

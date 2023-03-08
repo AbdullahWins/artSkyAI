@@ -5,6 +5,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../../contexts/AuthContext";
 import login from "../../../assets/cover/login.png";
 import loginBtn from "../../../assets/cover/loginbtn.png";
+import Menu from "../../../components/Shared/Menu";
+import Footer from "../../../components/Shared/Footer";
 
 const Login = () => {
   const { loginUserEmail } = useContext(AuthContext);
@@ -40,46 +42,54 @@ const Login = () => {
       });
   };
   return (
-    <div className="flex justify-center items-center gap-4 py-12 border-dashed border-2 border-mainColor mx-2">
-      <div className="flex flex-col items-center justify-center gap-4 lg:w-96 p-2">
-        <h2 className="text-center text-2xl font-bold pt-4">LOGIN</h2>
-        <figure className="px-5">
-          <img src={login} alt="login img" className="rounded-xl w-24" />
-        </figure>
-        <form
-          className="flex flex-col w-full items-center justify-center p-4"
-          onSubmit={handleLogin}
-        >
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            className="input border-none focus:outline-none w-full font-bold"
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            className="input border-none focus:outline-none w-full my-4 font-bold"
-          />
-          <button>
-            <img className="w-12" src={loginBtn} alt="login button" />
-          </button>
-        </form>
+    <section className="h-screen flex flex-col items-center justify-between w-full">
+      <div className="w-full">
+        <Menu></Menu>
       </div>
-      <ToastContainer
-        position="top-right"
-        autoClose={2000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
-    </div>
+      <div className="flex items-center justify-center p-8 border-2 rounded-lg border-mainColor">
+        <div className="flex flex-col items-center justify-center gap-4 lg:w-96">
+          <h2 className="text-center text-2xl font-bold pt-4">LOGIN</h2>
+          <figure>
+            <img src={login} alt="login img" className="rounded-xl w-24" />
+          </figure>
+          <form
+            className="flex flex-col w-full items-center justify-center"
+            onSubmit={handleLogin}
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              className="input bg-whiteLow border-none focus:outline-none w-full font-bold"
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              className="input bg-whiteLow border-none focus:outline-none w-full my-4 font-bold"
+            />
+            <button>
+              <img className="w-12" src={loginBtn} alt="login button" />
+            </button>
+          </form>
+        </div>
+        <ToastContainer
+          position="top-right"
+          autoClose={2000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
+      </div>
+      <div className="w-full">
+        <Footer></Footer>
+      </div>
+    </section>
   );
 };
 
