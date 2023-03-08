@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../../contexts/AuthContext";
-import login from "../../../assets/cover/login.png";
+import login from "../../../assets/logo/logo.png";
 import loginBtn from "../../../assets/cover/loginbtn.png";
 import Menu from "../../../components/Shared/Menu";
 import Footer from "../../../components/Shared/Footer";
@@ -42,7 +42,7 @@ const Login = () => {
       });
   };
   return (
-    <section className="h-screen flex flex-col items-center justify-between w-full">
+    <section className="h-screen bg-pureBlackColor flex flex-col items-center justify-between w-full">
       <div className="w-full">
         <Menu></Menu>
       </div>
@@ -50,7 +50,7 @@ const Login = () => {
         <div className="flex flex-col items-center justify-center gap-4 lg:w-96">
           <h2 className="text-center text-2xl font-bold pt-4">LOGIN</h2>
           <figure>
-            <img src={login} alt="login img" className="rounded-xl w-24" />
+            <img src={login} alt="login img" className="rounded-xl w-44" />
           </figure>
           <form
             className="flex flex-col w-full items-center justify-center"
