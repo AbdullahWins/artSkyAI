@@ -7,7 +7,7 @@ const AiDoctor = () => {
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "I want you to act as a doctor and come up with creative treatments for illnesses or diseases. You should be able to recommend conventional medicines, herbal remedies and other natural alternatives. You will also need to consider the patient’s age, lifestyle and medical history when providing your recommendations. The first patient's request/concern is: ";
+    const prompt = "Act as a doctor and come up with creative treatments. You should be able to recommend conventional medicines, herbal remedies and other natural alternatives for the following problem: ";
     setIsLoading(true);
     processRequest(prompt, input);
   };

@@ -8,7 +8,7 @@ const ProductDescription = () => {
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
     const prompt =
-      "Write a SEO friendly 900-1100 words product description for";
+      "Write a SEO friendly 900-1100 words product description. keep the description structured and on point. it must be engaging too. the product is:";
     setIsLoading(true);
     processRequest(prompt, input);
   };

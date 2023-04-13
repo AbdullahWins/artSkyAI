@@ -7,7 +7,7 @@ const UniqueValueProposition = () => {
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "Write unique value proposition (UAV) for:";
+    const prompt = "Write unique value proposition (UAV) and then give useful insights for:";
     setIsLoading(true);
     processRequest(prompt, input);
   };

@@ -7,7 +7,7 @@ const ColdEmail = () => {
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "Write an engaging cold email about";
+    const prompt = "Write an engaging cold email with proper placeholders. the topic is:";
     setIsLoading(true);
     processRequest(prompt, input);
   };

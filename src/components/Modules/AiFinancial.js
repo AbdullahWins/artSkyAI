@@ -8,7 +8,7 @@ const AiFinancial = () => {
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
     const prompt =
-      "Act like a financial advisor, provide structured assistance and calculated decision on";
+      "Act like a financial advisor, provide structured assistance, with chart or table with a calculated decision on the following topic:";
     setIsLoading(true);
     processRequest(prompt, input);
   };

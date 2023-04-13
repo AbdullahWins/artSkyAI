@@ -8,7 +8,7 @@ const PersonalAssistant = () => {
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
     const prompt =
-      "Act like a personal assistant, provide structured assistance and data driven decision on";
+      "Act like a personal assistant for ARTSKY Ltd, provide structured assistance and data driven decision. keep in mind to provided informative and well detailed output. Here is the topic:";
     setIsLoading(true);
     processRequest(prompt, input);
   };

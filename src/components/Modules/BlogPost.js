@@ -7,7 +7,7 @@ const BlogPost = () => {
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "Write a SEO friendly 900-1100 words blog post about";
+    const prompt = "Write a SEO friendly 900-1100 words blog post, make sure the words are engaging and the post is longer than 1000 words. the topic is:";
     setIsLoading(true);
     processRequest(prompt, input);
   };

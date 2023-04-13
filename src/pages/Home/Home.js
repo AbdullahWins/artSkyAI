@@ -128,7 +128,7 @@ const Home = () => {
     },
 
     {
-      moduleName: "Problem-Agitate-Solution",
+      moduleName: "PAS Framework",
       moduleDescription: "Get quick but in-depth Problem-Agitate-Solutions.",
       moduleRoute: "/pas",
       img: pas,
@@ -163,7 +163,7 @@ const Home = () => {
       {/* cards */}
       <div className="rounded-xl">
         <div className="text-center py-4 mb-8">
-          <p className="text-4xl font-black">
+          <p className="text-transparent bg-clip-text bg-gradient-to-b from-aboutTextStart to-aboutTextEnd text-4xl font-bold pb-2">
             &#128075; Hey, what are we creating today?
           </p>
           <p className="opacity-70 pt-3">

@@ -7,7 +7,8 @@ const AIDA = () => {
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "Write AIDA Framework for";
+    const prompt =
+      "You are a AIDA framework specialist at ARTSKY Ltd, Write a detailed and explainatory AIDA framework for the following topic:";
     setIsLoading(true);
     processRequest(prompt, input);
   };
@@ -17,7 +18,7 @@ const AIDA = () => {
       <div className="w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto my-0 bg-whiteHigh rounded-lg">
         <section className="flex flex-col">
           <h1 className="text-3xl font-bold text-blackHigh p-2">
-            AIDA Framework
+            Content Rewritter
           </h1>
           <div className="flex flex-col gap-2 p-2">
             <textarea

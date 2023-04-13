@@ -7,7 +7,7 @@ const JobDescription = () => {
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "Write a detailed Job description for:";
+    const prompt = "Write a detailed Job description. it should be structuted and well detailed. the topic is:";
     setIsLoading(true);
     processRequest(prompt, input);
   };

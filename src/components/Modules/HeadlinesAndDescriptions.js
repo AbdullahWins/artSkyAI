@@ -8,7 +8,7 @@ const HeadlinesAndDescriptions = () => {
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
     const prompt =
-      "Write an engaging headline and SEO friendly description for:";
+      "Write an engaging headline and SEO friendly description with placeholders for images with the image type mentioned. here is the topic:";
     setIsLoading(true);
     processRequest(prompt, input);
   };

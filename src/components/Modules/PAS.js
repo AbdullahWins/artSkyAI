@@ -7,7 +7,7 @@ const PAS = () => {
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "Write detailed Problem-Agitate-Solution about";
+    const prompt = "Write detailed Problem-Agitate-Solution, if possible add a table or chart to show some related data about the following topic:";
     setIsLoading(true);
     processRequest(prompt, input);
   };

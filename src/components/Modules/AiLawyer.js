@@ -7,7 +7,7 @@ const AiLawyer = () => {
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "Pretend to be a Lawyer, give suggestion about";
+    const prompt = "Pretend to be a Lawyer from a famous law firm, give lawful suggestions and advice on the topic:";
     setIsLoading(true);
     processRequest(prompt, input);
   };

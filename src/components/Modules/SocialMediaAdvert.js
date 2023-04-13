@@ -7,7 +7,7 @@ const SocialMediaAdvert = () => {
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "Write an engaging social media advert for:";
+    const prompt = "Write an engaging social media advert, add some engaging keywords. write the advert for:";
     setIsLoading(true);
     processRequest(prompt, input);
   };
